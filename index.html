@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+      <link rel="stylesheet" href="base.css">
+      <title>Library App</title>
+  </head>
+  <body>
+    Change Background <div id="red-rect"></div>
+    <div id="yellow-rect"></div>
+    <div class="container mt-5">
+      <h1>My Library</h1>
+      <table class="table mt-5" id="books-table">
+          <tr>
+              <td>Author</td>
+              <td>Title</td>
+              <td>Pages</td>
+              <td>Read?</td>
+          </tr>
+      </table>
+
+      <br><br><br>
+
+      <p id="error-message"></p>
+      <form action="" class="form">
+        <table>
+          <tr>
+            <td>
+              <input class="form-control" type="text" id="addBookAuthor" placeholder="Author">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="addBookTitle" placeholder="Title">
+            </td>
+            <td>
+              <input type="text" id="addBookPages" class="form-control" placeholder="Pages">
+            </td>
+            <td>
+              <input type="text" id="addReadStatus" class="form-control" placeholder="Read (true/false)">
+            </td>
+            <td>
+              <input type="button" value="Add Book" class="btn btn-primary" id="btnAddBook">
+            </td>            
+          </tr>
+        </table>
+      </form>        
+    </div>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="base.js"></script>
+  </body>
+</html>

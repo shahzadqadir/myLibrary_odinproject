@@ -1,0 +1,17 @@
+#red-rect{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+#yellow-rect{
+    width: 30px;
+    height: 30px;
+    background-color:yellow;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 2px;
+}
