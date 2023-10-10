@@ -35,7 +35,11 @@ function createTableRow(tableId, bookObj){
     const readStatus = document.createElement("td");
     const updateCheckbox = document.createElement("input");
     updateCheckbox.type = "checkbox";
-    updateCheckbox.checked = bookObj.readStatus;
+    if (readStatus === "true"){
+        updateCheckbox.checked = true;
+    } else {
+        updateCheckbox.checked = false;
+    }
     readStatus.appendChild(updateCheckbox);
     readStatus.onclick = () => {
         if (bookObj.readStatus == true){
